@@ -15,7 +15,9 @@
           <a href="/">Inicio</a>
         </ul>
         <ul>
-          <a>Inicio routerLink</a>
+          <a [routerLink]="['/games']" routerLinkActive="router-link-active"
+            >Inicio routerLink</a
+          >
         </ul>
       </ul>
     </nav>
@@ -30,6 +32,9 @@
           <img src="" alt="" />
           <figcaption></figcaption>
         </figure>
+      </article>
+      <article>
+        {{ title }}
       </article>
     </section>
     <hr />
