@@ -1,1 +1,15 @@
-<p>post works!</p>
+<section class="border p-4">
+  @if (!isLogged) {
+    <section>
+      <article>Post 1</article>
+      <article>Post 2</article>
+      <h3 class="text-xl">Uso de la directiva for</h3>
+      <app-card [value]="value"></app-card>
+      <app-card value="Value from string"></app-card>
+    </section>
+  } @else {
+    <section>
+      <p>No se pueden mostrar los post's hasta que inicies sesión</p>
+    </section>
+  }
+</section>
